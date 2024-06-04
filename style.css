@@ -21,6 +21,47 @@ nav video {
     width: 100%;
 }
 
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/* responsividade */
+@media screen and (max-width: 1170px) {
+    nav {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-flex-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    .mobile-flex-container {
+        list-style-type: none;
+        text-align: center;
+    }
+}
+
 .services h2 {
     padding: 15px 15px;
     justify-content: center;
@@ -41,6 +82,22 @@ nav video {
     height: 300px;
 }
 
+@media screen and (max-width: 1170px) {
+    .services h2 {
+        text-align: center;
+    }
+
+    .services #grid-container {
+        grid-template-columns: none;
+    }
+
+    #card img {
+        width: 50%;
+        display: flex;
+        position: relative;
+    }
+}
+
 .about h2 {
     padding: 15px 15px;
     justify-content: center;
@@ -55,6 +112,22 @@ nav video {
     padding-bottom: 40px;
 }
 
+@media screen and (max-width: 1170px){
+    .about h2 {
+        text-align: center;
+    }
+    .about img {
+        width: 50%;
+        display: flex;
+        position: relative;
+    }
+    #text {
+        text-align: center;
+        justify-content: center;
+    }
+    
+}
+
 .recipes h2 {
     padding: 15px 15px;
     justify-content: center;
@@ -63,11 +136,21 @@ nav video {
     font-size: 20px;
 }
 
-.recipes #grid-container {
+.recipes #grid-container01 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     padding: 20px;
+}
+
+@media screen and (max-width: 1170px){
+    .recipes h2 {
+        text-align: center;
+    }
+
+    .recipes #grid-container01 {
+        grid-template-columns: none;
+    }
 }
 
 .video h2 {
@@ -82,6 +165,16 @@ nav video {
     width: 100%;
 }
 
+@media screen and (max-width: 1170px){
+    .video h2 {
+        display: none;
+    }
+
+    .video video {
+        display: none;
+    }
+}
+
 .testimonials h2 {
     padding: 15px 15px;
     justify-content: center;
@@ -90,7 +183,40 @@ nav video {
     font-size: 20px;
 }
 
+.testimonials #card-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+#card-grid-container #card p {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1170px){
+    .testimonials h2  {
+        justify-content: center;
+    }
+    .testimonials #card-grid-container {
+        grid-template-columns: none;
+    }
+    #card-grid-container #card p {
+        text-align: start;
+    }
+    
+}
+
 footer {
     justify-content: center;
     text-align: center;
+}
+
+#linha {
+    padding: 1px;
+    margin-left: 400px;
+    background-color: red;
+    width: 30%;
 }

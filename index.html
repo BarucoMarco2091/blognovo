@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Cooking blog</title>
 </head>
 
@@ -42,7 +45,34 @@
                 </li>
             </ul>
             <video autoplay controls src="assets/7782528-hd_1920_1080_30fps.mp4">Harvesting</video>
+
         </nav>
+        <button id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="mobile_menu">
+            <ul class="mobile-flex-container">
+                <li>
+                    <a class="flex-item" href="#">About</a>
+                </li>
+                <li>
+                    <a class="flex-item" href="#">Recipes</a>
+                </li>
+                <li>
+                    <a class="flex-item" href="#">Videos</a>
+                </li>
+                <h1>Ana Seiber.</h1>
+                <li>
+                    <a class="flex-item" href="#">Cookbook</a>
+                </li>
+                <li>
+                    <a class="flex-item" href="#">Press</a>
+                </li>
+                <li>
+                    <a class="flex-item" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="services">
@@ -67,13 +97,14 @@
                 <div id="text">
                     <p>Get your own</p>
                     <h2>FREE RECIPE EBOOK!</h2>
-                    <p>Subscribe here to receive news recipes, first access to new meal plans<br>and a complimentary recipe ebook.</p>
+                    <p>Subscribe here to receive news recipes, first access to new meal plans<br>and a complimentary
+                        recipe ebook.</p>
                 </div>
             </div>
         </section>
         <section class="recipes">
             <h2>Recipes</h2>
-            <div id="grid-container">
+            <div id="grid-container01">
                 <div id="card">
                     <img src="assets/pexels-elletakesphotos-2696064.jpg" alt="">
                 </div>
@@ -94,10 +125,32 @@
         </section>
         <section class="testimonials">
             <h2>Testimonials</h2>
+            <div id="card-grid-container">
+                <div id="card">
+                    <img src="assets/pexels-guilhermealmeida-1858175.jpg" alt="">
+                    <p>Maria</p>
+                </div>
+                <div id="card">
+                    <img src="assets/pexels-olly-762020.jpg" alt="">
+                    <p>Ana</p>
+                </div>
+                <div id="card">
+                    <img src="assets/pexels-olly-762020.jpg" alt="">
+                    <p>Eliane</p>
+                </div>
+                <div id="card">
+                    <img src="assets/pexels-hasibullah-zhowandai-248954-819530.jpg" alt="">
+                    <p>Manoel</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <h2>Sign up for our<br>newsletter.</h2>
+        <div id="linha">
+            
+        </div>
+        
         <p>Desenvolvido por Marco.</p>
     </footer>
     <script src="script.js"></script>
